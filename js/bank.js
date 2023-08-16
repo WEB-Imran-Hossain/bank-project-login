@@ -46,4 +46,15 @@ const newWithdrawAmount = parseFloat(newWithdrawAmountString);
   const previousWithdrawTotal = parseFloat(previousWithdrawTotalString);
   const currentWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
   withdrawTotalElement.innerText = currentWithdrawTotal;
+
+  // balanced total decreased withdraw total
+  const balanceTotalElement = document.getElementById('balance-total')
+  const previousBalancedTotalString = balanceTotalElement.innerText;
+  const previousBalancedTotal = parseFloat(previousBalancedTotalString);
+  const newBalancedTotal = previousBalancedTotal - newWithdrawAmount;
+  balanceTotalElement.innerText = newBalancedTotal;
+
+  // clear the value input field
+  depositField.value = ""
+  withdrawField.value = ""
 });
