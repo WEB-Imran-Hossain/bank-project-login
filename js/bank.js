@@ -35,4 +35,15 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
 // get the withdraw input Id
 const withdrawField = document.getElementById("input-withdraw");
 // get the withdraw amount string value. (remember always all number value stay string)
+const newWithdrawAmountString = withdrawField.value;
+// convert string value
+const newWithdrawAmount = parseFloat(newWithdrawAmountString);
+
+//   get the current withdraw total amount
+  // get the total withdraw Id
+  const withdrawTotalElement = document.getElementById('withdraw')
+  const previousWithdrawTotalString = withdrawTotalElement.innerText;
+  const previousWithdrawTotal = parseFloat(previousWithdrawTotalString);
+  const currentWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
+  withdrawTotalElement.innerText = currentWithdrawTotal;
 });
