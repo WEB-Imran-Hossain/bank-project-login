@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBATION BANK</title>
+    <link rel="stylesheet" href="./styles/home-style.css" />
+    <!-- tailwind CSS and DaisyUI  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <div class="text-center mt-10 md:mt-20 gap-2 md:gap-5 flex flex-col">
+        <h1 class="text-2xl md:text-3xl font-semibold capitalize">
+          Welcome to our OBATION Bank system.
+        </h1>
+        <p class="text-xl md:text-2xl font-medium capitalize">
+          Service is our main goal.
+        </p>
+      </div>
+    </header>
+    <!-- main section  -->
+    <main class="max-w-[70vw] mx-auto">
+      <section
+        class="flex flex-col lg:flex-row items-center justify-center lg:gap-28 gap-10 md:mt-10 mt-5 text-center md:text-left">
+        <div
+          class="w-80 rounded p-7 h-40 text-[#1a1a1a] backdrop-blur-xl bg-white/30">
+          <p class="text-3xl">Deposit</p>
+          <p class="text-3xl mt-3 text-green-500">$ <span id="deposit-total">00</span></p>
+        </div>
+        <div
+          class="w-80 rounded p-7 h-40 text-[#1a1a1a] backdrop-blur-xl bg-white/30">
+          <p class="text-3xl">Withdraw</p>
+          <p class="text-3xl mt-3 text-yellow-500">$ <span id="withdraw">00</span></p>
+        </div>
+        <div
+          class="w-80 rounded p-7 h-40 text-[#1a1a1a] backdrop-blur-xl bg-white/30">
+          <p class="text-3xl">Balance</p>
+          <p class="text-3xl mt-3 text-green-500">$ <span id="balance-total">1250</span></p>
+        </div>
+      </section>
+      <!-- Input area -->
+      <section class="flex flex-col lg:flex-row mx-auto">
+        <!-- deposit -->
+        <div
+          class="backdrop-blur-xl bg-white/30 text-[#1a1a1a] min-h-12 p-8 lg:w-2/5 md:w-3/5 mx-auto w-full lg:mt-20 md:mt-10 mt-10 flex rounded flex-col gap-4">
+          <h2 class="text-3xl mt-6 capitalize text-center md:text-left">
+            Deposit Money
+          </h2>
+          <input
+            class="text-xl h-16 rounded-md px-1 max-w-52 outline-0 outline-transparent border-0 border-b-2 w-full bg-transparent"
+            placeholder="Enter Amount"
+            type="number"
+            name=""
+            id="input-deposit"
+          />
+          <button
+            id="deposit-btn"
+            class="btn bg-green-500 text-lg w-fit text-[#1a1a1a] border-0 transition ease-in-out delay-150 hover:text-[#FFFFFF]"
+          >
+            Deposit
+          </button>
+        </div>
+        <!-- withdraw -->
+        <div
+          class="backdrop-blur-xl bg-white/30 text-[#1a1a1a] min-h-12 p-8 lg:w-2/5 md:w-3/5 mx-auto w-full lg:mt-20 md:mt-10 mt-10 flex rounded flex-col gap-4"
+        >
+          <h2 class="text-3xl mt-6 text-center md:text-left">Withdraw Money</h2>
+          <input
+            class="text-xl h-16 rounded-md px-1 max-w-52 outline-0 outline-transparent border-0 border-b-2 w-full bg-transparent"
+            placeholder="Enter Amount"
+            type="number"
+            name=""
+            id="input-withdraw"
+          />
+          <button
+            id="withdraw-btn"
+            class="btn bg-yellow-500 text-lg w-fit text-[#1a1a1a] border-0 transition ease-in-out delay-150 hover:text-[#FFFFFF]"
+          >
+            withdraw
+          </button>
+        </div>
+      </section>
+      <!-- clear btn  -->
+      <section class="text-center mb-10">
+        <button
+          id="clear-btn"
+          class="bg-red-500 hover:bg-[#1a1a1a] text-black text-lg rounded-lg mt-8 w-28 font-bold h-14 border-0 transition ease-in-out delay-150 hover:text-[#FFFFFF]"
+          title="Clear all accounts balance"
+        >
+          RESET
+        </button>
+      </section>
+    </main>
+    <!-- JS external file  -->
+    <script src="./js/bank.js"></script>
+  </body>
+</html>

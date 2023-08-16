@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Own Bank Login Details</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- tailwind CSS and DaisyUI  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- main section  -->
+    <main>
+      <div class="mt-10 md:mt-20 gap-2 md:gap-5 flex flex-col text-[#800080]">
+        <h1 class="text-2xl md:text-5xl font-bold">OBEATION BANK LIMITED</h1>
+      </div>
+
+      <!-- login section -->
+      <section class="lg:mt-10 md:mt-14 mt-8 mb-8">
+        <div
+          class="flex flex-col bg-transparent p-5 border-2 backdrop-blur-xl lg:w-1/2 mx-auto gap-4 lg:w-[480px] lg:h-[500px] lg:p-0 rounded-lg lg:min-h-[40vh] lg:justify-center lg:items-center"
+        >
+          <h2
+            class="text-2xl md:text-3xl font-bold capitalize text-[#1a1a1a] text-center"
+          >
+            Login Information
+          </h2>
+
+          <div class="flex flex-col gap-5 lg:w-4/5 mt-4">
+            <input
+              class="text-[#1a1a1a] text-xl p-4 rounded h-14 outline-0 outline-transparent border-0 border-b-2 w-full bg-transparent"
+              placeholder="Enter your email"
+              type="text"
+              name="user-email"
+              autocomplete="off"
+              id="email"
+            />
+
+            <input
+              class="text-[#1a1a1a] text-xl p-4 rounded h-14 outline-0 outline-transparent border-0 border-b-2 w-full bg-transparent"
+              placeholder="Password"
+              type="password"
+              name=""
+              id="user-password"
+            />
+          </div>
+
+          <div>
+            <button
+              id="submitButton"
+              class="transition ease-in-out delay-150 backdrop-brightness-100 bg-[#1a1a1a]/60 hover:bg-[#1a1a1a] px-5 py-3 rounded text-xl text-white"
+            >
+              Submit
+            </button>
+          </div>
+
+          <p class="text-[#1a1a1a] text-xl">
+            Email : imran@obeation.com <br />
+            Password: i12345@##
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- JS external file  -->
+    <script src="./js/login.js"></script>
+  </body>
+</html>
