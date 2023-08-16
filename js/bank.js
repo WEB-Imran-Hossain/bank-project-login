@@ -30,6 +30,9 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
 });
 
 // withdraw button approval
-document
-  .getElementById("withdraw-btn")
-  .addEventListener("click", function () {});
+// get the deposit button
+document.getElementById("withdraw-btn").addEventListener("click", function () {
+// get the withdraw input Id
+const withdrawField = document.getElementById("input-withdraw");
+// get the withdraw amount string value. (remember always all number value stay string)
+});
