@@ -36,28 +36,39 @@
     <!-- main section  -->
     <main class="max-w-[70vw] mx-auto">
       <section
-        class="flex flex-col lg:flex-row items-center justify-center lg:gap-28 gap-10 md:mt-10 mt-5 text-center md:text-left">
+        class="flex flex-col lg:flex-row items-center justify-center lg:gap-28 gap-10 md:mt-10 mt-5 text-center md:text-left"
+      >
         <div
-          class="w-80 rounded p-7 h-40 text-[#1a1a1a] backdrop-blur-xl bg-white/30">
+          class="w-80 rounded p-7 h-40 text-[#1a1a1a] backdrop-blur-xl bg-white/30"
+        >
           <p class="text-3xl">Deposit</p>
-          <p class="text-3xl mt-3 text-green-500">$ <span id="deposit-total">0.00</span></p>
+          <p class="text-3xl mt-3 text-green-500">
+            $ <span id="deposit-total">0.00</span>
+          </p>
         </div>
         <div
-          class="w-80 rounded p-7 h-40 text-[#1a1a1a] backdrop-blur-xl bg-white/30">
+          class="w-80 rounded p-7 h-40 text-[#1a1a1a] backdrop-blur-xl bg-white/30"
+        >
           <p class="text-3xl">Withdraw</p>
-          <p class="text-3xl mt-3 text-yellow-500">$ <span id="withdraw">0.00</span></p>
+          <p class="text-3xl mt-3 text-yellow-500">
+            $ <span id="withdraw">0.00</span>
+          </p>
         </div>
         <div
-          class="w-80 rounded p-7 h-40 text-[#1a1a1a] backdrop-blur-xl bg-white/30">
+          class="w-80 rounded p-7 h-40 text-[#1a1a1a] backdrop-blur-xl bg-white/30"
+        >
           <p class="text-3xl">Balance</p>
-          <p class="text-3xl mt-3 text-green-500">$ <span id="balance-total">1250.00</span></p>
+          <p class="text-3xl mt-3 text-green-500">
+            $ <span id="balance-total">1250.00</span>
+          </p>
         </div>
       </section>
       <!-- Input area -->
       <section class="flex flex-col lg:flex-row mx-auto">
         <!-- deposit area-->
         <div
-          class="backdrop-blur-xl bg-white/30 text-[#1a1a1a] min-h-12 p-8 lg:w-2/5 md:w-3/5 mx-auto w-full lg:mt-20 md:mt-10 mt-10 flex rounded flex-col gap-4">
+          class="backdrop-blur-xl bg-white/30 text-[#1a1a1a] min-h-12 p-8 lg:w-2/5 md:w-3/5 mx-auto w-full lg:mt-20 md:mt-10 mt-10 flex rounded flex-col gap-4"
+        >
           <h2 class="text-3xl mt-6 capitalize text-center md:text-left">
             Deposit Money
           </h2>
@@ -95,18 +106,18 @@
           </button>
         </div>
       </section>
-      <!-- clear btn  -->
-      <section class="text-center mb-10">
-        <button
-          id="clear-btn"
-          class="bg-red-500 hover:bg-[#1a1a1a] text-black text-lg rounded-lg mt-8 w-28 font-bold h-14 border-0 transition ease-in-out delay-150 hover:text-[#FFFFFF]"
-          title="Clear all accounts balance"
-        >
-          RESET
-        </button>
-      </section>
+   <!-- clear btn  -->
+   <section class="text-center mb-10">
+    <button
+      id="clear-btn"
+      class="bg-red-500 hover:bg-[#1a1a1a] text-black text-lg rounded-lg mt-8 w-28 font-bold h-14 border-0 transition ease-in-out delay-150 hover:text-[#FFFFFF]"
+      title="Clear all accounts balance"
+    >
+      RESET
+    </button>
+  </section>
     </main>
     <!-- JS external file  -->
-    <script src="./js/bank.js"></script>
+    <script src="./js/withdraw.js"></script>
   </body>
 </html>
